@@ -1,5 +1,5 @@
 class Company < ApplicationRecord
-  ## has_one_attached :icon
+  has_one_attached :icon
 
   ## before_create :slugify
 
