@@ -1,15 +1,17 @@
 class Company < ApplicationRecord
   has_one_attached :icon
+  before_create :generate_slug
 
-  ## before_create :slugify
+  validates_attachment_content_type :icon, content_type: /\Aimage\/.*\z/
 
-  def slugify
-    self.slug = icon.filename.to_s.parameterize
+  attr_accessor :filename
+  validates_content_type :icon, attached: true, content_type: %i[image/jpeg image/png]
+
+  def generate_slug
+    self.slug = filename.parameterize if filename.present?
   end
 
-  def image_url
-    # Assuming 'slug' contains the filename of the image
-    # Adjust the path to match your directory structure
-    File.join('http://localhost:3001/public/icons', slug)
+  def icon_url
+    "/public/icons/#{filename.parameterize}" if filename.present?
   end
 end

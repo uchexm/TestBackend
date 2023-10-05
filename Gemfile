@@ -24,6 +24,7 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'rack-cors', require: 'rack/cors'
 
+gem 'activestorage'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
