@@ -55,6 +55,8 @@ config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present? || 
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "TestBackend_production"
   config.assets.compile = true
+ 
+  config.public_file_server.enabled = true
 
   config.action_mailer.perform_caching = false
 

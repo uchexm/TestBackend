@@ -3,7 +3,7 @@ Company.destroy_all
 
 # Seed data for Company with icons
 [
-  Rails.root.join('db', 'icons', 'visa-black.svg'),  
+  Rails.root.join('public', 'icons', 'visa-black.svg'),  
   Rails.root.join('db', 'icons', 'tyme-bank-black.svg'),
   Rails.root.join('db', 'icons', 'distell-black.svg'),
   Rails.root.join('db', 'icons', 'spotify-black.svg'),
