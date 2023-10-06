@@ -72,6 +72,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## :camera: Screenshot <a name="Screen-shot"></a>
+
+  <img src="./public/icons/api.PNG" alt="">
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
