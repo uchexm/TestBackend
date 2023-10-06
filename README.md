@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Car Rentals Backend ](#-car-rentals-backend-)
+- [📖 Brands Test Backend ](#-Brands-Test-backend-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -32,7 +32,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Car Rentals Backend <a name="about-project"></a>
+# 📖 Brands Test Backend <a name="about-project"></a>
 
 **Brand Test** is a Rails API that serves as database to the [Brands Test Frontend](https://github.com/uchexm/testfrontend) project for Accenture Interview process.
 
@@ -144,7 +144,7 @@ Example command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Uchechi Nwaka**
 
