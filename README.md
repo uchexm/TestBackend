@@ -34,7 +34,7 @@
 
 # 📖 Car Rentals Backend <a name="about-project"></a>
 
-**Brand Test** is a Rails API that serves as database to the [Brands Test Frontend](https://github.com/uchexm/frontendtest.git) project for Accenture Interview process.
+**Brand Test** is a Rails API that serves as database to the [Brands Test Frontend](https://github.com/uchexm/testfrontend) project for Accenture Interview process.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -59,8 +59,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **Create database**
-- **Post your car for renting**
-- **Generate Authentication Token using jwt-gem**
+- **List all Brands**
+- **Generate Authentication and display Brands**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Render]()
+- Under Construction
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
