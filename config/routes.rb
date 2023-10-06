@@ -7,5 +7,9 @@ Rails.application.routes.draw do
     end
   end
 
+  # Add a route for Active Storage
+  get "rails/active_storage/blobs/redirect/*path", to: "active_storage/blobs/redirect#show"
+
+  # Define a catch-all route for your React app
   get "*path", to: "pages#index", via: :all
 end
