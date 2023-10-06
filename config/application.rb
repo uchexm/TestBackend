@@ -10,14 +10,27 @@ module TestBackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    # config/application.rb or config/environments/development.rb
+config.port = 3001 # Change to the desired port number
+
 
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
+    config.assets.enabled = true
+    config.assets.version = '1.0'
+
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+  # config/application.rb or config/environments/development.rb
+config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins 'http://localhost:3000' # Adjust to the actual origin of your React app
+    resource '/api/*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options]
+  end
+end
 
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.

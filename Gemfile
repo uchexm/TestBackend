@@ -9,8 +9,22 @@ gem "rails", "~> 7.0.5"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
+## gem "fast_jsonapi"
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
+# Gemfile
+
+gem 'sass-rails', '~> 5.1'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.2'
+
+
+# ... other gems ...
+
+gem 'rack-cors', require: 'rack/cors'
+
+gem 'activestorage'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"

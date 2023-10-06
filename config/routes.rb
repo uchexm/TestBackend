@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root "pages#index"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  namespace :api do
+    namespace :v1 do
+      resources :companies, params: :slug
+    end
+  end
+
+  # Add a route for Active Storage
+  get "rails/active_storage/blobs/redirect/*path", to: "active_storage/blobs/redirect#show"
+
+  # Define a catch-all route for your React app
+  get "*path", to: "pages#index", via: :all
 end
