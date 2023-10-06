@@ -3,7 +3,8 @@ module Api
     class CompaniesController < ApplicationController
       def index
         companies = Company.all
-        render json: companies.map { |company| company.as_json.merge(filename: company.filename) }
+        company_data = companies.map { |company| { id: company.id, icon_url: company.icon_url } }
+        render json: company_data
       end
 
       # Other actions...
